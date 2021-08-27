@@ -1,6 +1,6 @@
 name: flutter_union_pay
 description:  A Flutter plugin for allowing developers to pay with native Android&iOS UnionPay SDKs.
-version: 0.0.1
+version: 1.0.0
 homepage: https://github.com/xmy1231/flutter_union_pay
 
 environment:
