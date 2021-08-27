@@ -45,7 +45,7 @@ class HomePageState extends State<HomePage> {
     // We also handle the message potentially returning null.
     try {
 
-      platformVersion = await UnionPay.version;
+      platformVersion = await UnionPay.uPayVersion();
       print("platformVersion===$platformVersion");
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';

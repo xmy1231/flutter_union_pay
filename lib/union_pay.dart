@@ -15,13 +15,13 @@ class UnionPay {
 
 
   ///## 获取云闪付控件版本号
-  static Future<String> get version async {
+  static Future<String> uPayVersion() async {
     final String version = await _channel.invokeMethod('version');
     return version;
   }
 
   ///## 判断是否安装云闪付App
-  static Future<bool> get installed async {
+  static Future<bool> isInstalled() async {
     return await _channel.invokeMethod('installed');
   }
 
