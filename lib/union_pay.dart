@@ -3,8 +3,8 @@ import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
-import 'package:flutter_union_pay/enum/union_pay_enum.dart';
-import 'package:flutter_union_pay/model/payment_result_model.dart';
+import 'package:union_pay/enum/union_pay_enum.dart';
+import 'package:union_pay/model/payment_result_model.dart';
 
 class UnionPay {
   static const _PACKAGE_NAME = 'flutter_union_pay';

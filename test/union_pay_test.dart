@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_union_pay/union_pay.dart';
+import 'package:union_pay/union_pay.dart';
 
 void main() {
   const MethodChannel channel = MethodChannel('flutter_union_pay');
