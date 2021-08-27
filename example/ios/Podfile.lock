@@ -1,6 +1,6 @@
 PODS:
   - Flutter (1.0.0)
-  - flutter_union_pay (0.0.1):
+  - flutter_union_pay (1.0.0):
     - Flutter
 
 DEPENDENCIES:
