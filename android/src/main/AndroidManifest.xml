@@ -16,12 +16,14 @@
     <application>
         <uses-library
             android:name="org.simalliance.openmobileapi" android:required="false"/>
+<!--
         <activity
             android:name="com.unionpay.uppay.PayActivity"
             android:screenOrientation="portrait"
             android:configChanges="orientation|keyboardHidden"
             android:excludeFromRecents="true"
             android:windowSoftInputMode="adjustResize"/>
+-->
 
         <activity
             android:name="com.unionpay.UPPayWapActivity"
