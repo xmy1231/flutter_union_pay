@@ -1,13 +1,13 @@
 #
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html.
-# Run `pod lib lint flutter_union_pay.podspec` to validate before publishing.
+# Run `pod lib lint union_pay.podspec` to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'flutter_union_pay'
-  s.version          = '0.0.1'
-  s.summary          = 'A new Flutter project.'
+  s.name             = 'union_pay'
+  s.version          = '1.0.1'
+  s.summary          = 'A Flutter plugin for allowing developers to pay with native Android&iOS UnionPay SDKs.'
   s.description      = <<-DESC
-A new Flutter project.
+  A Flutter plugin for allowing developers to pay with native Android&iOS UnionPay SDKs.
                        DESC
   s.homepage         = 'http://example.com'
   s.license          = { :file => '../LICENSE' }
