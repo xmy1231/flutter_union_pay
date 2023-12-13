@@ -44,12 +44,14 @@ typedef void (^UPPaymentResultBlock)(NSString* code, NSDictionary* data);
 
 /**
  *  APP是否已安装检测接口，通过该接口得知用户是否安装银联支付的APP。
- *
+ * @param mode 支付环境
+ * @param merchantInfo  商户标识
  *  @return 返回是否已经安装了银联支付APP
  */
 
 
-- (BOOL)isPaymentAppInstalled;
+- (BOOL)isPaymentAppInstalled:(NSString*)mode withMerchantInfo:(NSString *)merchantInfo;
+
 
 /**
  *  处理钱包或者独立快捷app支付跳回商户app携带的支付结果Url

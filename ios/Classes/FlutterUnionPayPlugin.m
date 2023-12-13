@@ -35,7 +35,9 @@
   if ([@"version" isEqualToString:call.method]) {
     result(@"Not Support iOS");
   }else if([@"installed" isEqualToString:call.method]){
-      Boolean ret = [[UPPaymentControl defaultControl] isPaymentAppInstalled];
+      NSString *mode = call.arguments[@"mode"];
+      NSString *merchantInfo = call.arguments[@"merchantInfo"];
+      Boolean ret = [[UPPaymentControl defaultControl] isPaymentAppInstalled:mode withMerchantInfo:merchantInfo];
       result([NSNumber numberWithBool:ret]);
   }else if([@"pay" isEqualToString:call.method]){
       NSString *tn = call.arguments[@"tn"];

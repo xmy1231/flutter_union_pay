@@ -21,8 +21,11 @@ class UnionPay {
   }
 
   ///## 判断是否安装云闪付App
-  static Future<bool> isInstalled() async {
-    return await _channel.invokeMethod('installed');
+  static Future<bool> isInstalled({required PaymentEnv mode, required String merchantInfo}) async {
+    return await _channel.invokeMethod('installed', {
+      'mode': _getEnvString(mode),
+      'merchantInfo': merchantInfo,
+    });
   }
 
 

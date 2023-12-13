@@ -31,8 +31,10 @@
 
 ## 检查云闪付App是否安装
 ```
-  var result = await UnionPay.isInstalled();
+
+  var result = await UnionPay.isInstalled(mode: PaymentEnv.DEVELOPMENT, merchantInfo : "");
 ```
+mode分为测试环境和生产环境, merchantInfo商户标识
 
 ## 支付
  只需设置支付环境和交易流水号即可。

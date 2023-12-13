@@ -56,15 +56,16 @@ class FlutterUnionPayPlugin: FlutterPlugin, MethodCallHandler, ActivityAware, Pl
         result.success(UPPayAssistEx.VERSION)
       }
       "installed" -> {
-        Log.e("ctx", activity.toString())
-        Toast.makeText(activity, "test", Toast.LENGTH_LONG).show()
-        val installed = UPPayAssistEx.checkWalletInstalled(activity)
+        val mode = call.argument<String>("mode")
+        val merchantInfo = call.argument<String>("merchantInfo")
+        val installed = UPPayAssistEx.checkWalletInstalled(activity, mode,merchantInfo)
+        Log.e("union app", "installed is $installed")
         result.success(installed)
       }
       "pay" -> {
         val tn = call.argument<String>("tn")
         val env = call.argument<String>("env")
-        Log.e("tn+env", tn +"<<>>"+ env)
+        Log.e("tn+env", "$tn<<>>$env")
         val ret = UPPayAssistEx.startPay(activity, null, null, tn, env)
         Log.e("ret", ret.toString())
       }
@@ -99,9 +100,10 @@ class FlutterUnionPayPlugin: FlutterPlugin, MethodCallHandler, ActivityAware, Pl
     if (data == null) {
       return true
     }
-    var payload: HashMap<String, Any?> = HashMap()
+    Log.e("data==", data.extras.toString())
+    val payload: HashMap<String, Any?> = HashMap()
     val paymentStatus = data.extras?.getString("pay_result")
-    when (paymentStatus?.toLowerCase(Locale.ROOT)) {
+    when (paymentStatus?.lowercase(Locale.ROOT)) {
       "success" -> payload["code"] = PAYMENT_SUCCESS
       "fail"-> payload["code"] = PAYMENT_FAIL
       "cancel"-> payload["code"] = PAYMENT_CANCEL

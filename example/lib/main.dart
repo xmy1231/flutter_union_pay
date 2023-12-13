@@ -88,10 +88,15 @@ class HomePageState extends State<HomePage> {
               child: Text('Running on: $_platformVersion\n'),
             ),
 
+            TextButton(onPressed: () {
+              UnionPay.isInstalled(mode: PaymentEnv.DEVELOPMENT, merchantInfo: "").then((value) {
+                print("安装成功$value");
+              });
+            },  child: Text('是否安装云支付App')),
             TextButton(onPressed: (){
               UnionPay.pay(
                 mode: PaymentEnv.DEVELOPMENT,
-                tn: "886511661307367448110",
+                tn: "669802785406247611910",
                 scheme: "UnionPayTest",
               ).then((value) {
                 print("##########$value");
