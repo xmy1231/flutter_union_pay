@@ -77,7 +77,7 @@
         }];
     }];
 
-    return YES;
+    return NO;
 }
 
 - (BOOL)handleOpenURL:(NSURL*)url{

@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'union_pay'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'A Flutter plugin for allowing developers to pay with native Android&iOS UnionPay SDKs.'
   s.description      = <<-DESC
   A Flutter plugin for allowing developers to pay with native Android&iOS UnionPay SDKs.
