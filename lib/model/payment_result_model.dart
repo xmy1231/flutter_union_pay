@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:flutter/material.dart';
+
 import 'package:union_pay/enum/union_pay_enum.dart';
 
 // 创建时间：2021/8/24 

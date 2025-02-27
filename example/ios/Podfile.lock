@@ -1,6 +1,6 @@
 PODS:
   - Flutter (1.0.0)
-  - union_pay (1.0.1):
+  - union_pay (1.0.3):
     - Flutter
 
 DEPENDENCIES:
@@ -14,9 +14,9 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/union_pay/ios"
 
 SPEC CHECKSUMS:
-  Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
-  union_pay: 2983b836f657856c92faba685bbfb73e380c0afd
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  union_pay: 2d3d4ba3fd5623815565bcea014773d841dfc790
 
-PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+PODFILE CHECKSUM: c4c93c5f6502fe2754f48404d3594bf779584011
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.16.2
