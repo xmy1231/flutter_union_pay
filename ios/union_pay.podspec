@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
                        DESC
   s.homepage         = 'https://github.com/xmy1231/flutter_union_pay'
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'xuj' => 'xujun_05130340@gmail.com' }
+  s.author           = { 'xuj' => 'xujun_05130340@hotmail.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
 
