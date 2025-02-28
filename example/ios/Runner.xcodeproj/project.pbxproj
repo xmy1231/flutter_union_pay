@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,10 +14,10 @@
 		850E31C926D72B0F00AF7A23 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 850E31C826D72B0F00AF7A23 /* CFNetwork.framework */; };
 		850E31CB26D72B1A00AF7A23 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 850E31CA26D72B1A00AF7A23 /* libz.tbd */; };
 		850E31CD26D72B2900AF7A23 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 850E31CC26D72B2900AF7A23 /* SystemConfiguration.framework */; };
-		85F4124626D72AA400D3A2A2 /* libPaymentControlMini.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F4124526D72AA400D3A2A2 /* libPaymentControlMini.a */; };
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
+		B1F99D1D2D705FED008452A5 /* UPPaymentControlMini.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F99D1C2D705FED008452A5 /* UPPaymentControlMini.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,7 +47,6 @@
 		850E31CA26D72B1A00AF7A23 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		850E31CC26D72B2900AF7A23 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		850E31D126D72CF600AF7A23 /* flutter_union_pay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = flutter_union_pay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		85F4124526D72AA400D3A2A2 /* libPaymentControlMini.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPaymentControlMini.a; path = ../../../../../../../jacky/Documents/develop/FlutterProject/flutter_union_pay/ios/Classes/UnionPaySDK/libPaymentControlMini.a; sourceTree = "<group>"; };
 		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Flutter/Debug.xcconfig; sourceTree = "<group>"; };
 		9740EEB31CF90195004384FC /* Generated.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Generated.xcconfig; path = Flutter/Generated.xcconfig; sourceTree = "<group>"; };
 		97C146EE1CF9000F007C117D /* Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +54,7 @@
 		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1F99D1C2D705FED008452A5 /* UPPaymentControlMini.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = UPPaymentControlMini.xcframework; path = ../../ios/Framework/UPPaymentControlMini.xcframework; sourceTree = "<group>"; };
 		DBA485CBA5E1B54941858E5B /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,10 +63,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1F99D1D2D705FED008452A5 /* UPPaymentControlMini.xcframework in Frameworks */,
 				850E31CD26D72B2900AF7A23 /* SystemConfiguration.framework in Frameworks */,
 				850E31CB26D72B1A00AF7A23 /* libz.tbd in Frameworks */,
 				850E31C926D72B0F00AF7A23 /* CFNetwork.framework in Frameworks */,
-				85F4124626D72AA400D3A2A2 /* libPaymentControlMini.a in Frameworks */,
 				4900FDA58BD84D3ACA1E4BA0 /* Pods_Runner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,11 +77,11 @@
 		5151857F11626439FD22B875 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B1F99D1C2D705FED008452A5 /* UPPaymentControlMini.xcframework */,
 				850E31D126D72CF600AF7A23 /* flutter_union_pay.framework */,
 				850E31CC26D72B2900AF7A23 /* SystemConfiguration.framework */,
 				850E31CA26D72B1A00AF7A23 /* libz.tbd */,
 				850E31C826D72B0F00AF7A23 /* CFNetwork.framework */,
-				85F4124526D72AA400D3A2A2 /* libPaymentControlMini.a */,
 				7515094BB2246880F78C6202 /* Pods_Runner.framework */,
 			);
 			name = Frameworks;
@@ -172,7 +172,7 @@
 		97C146E61CF9000F007C117D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					97C146ED1CF9000F007C117D = {
@@ -216,10 +216,12 @@
 /* Begin PBXShellScriptBuildPhase section */
 		3B06AD1E1E4923F5004D2608 /* Thin Binary */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}",
 			);
 			name = "Thin Binary";
 			outputPaths = (
@@ -230,6 +232,7 @@
 		};
 		9740EEB61CF901F6004384FC /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);

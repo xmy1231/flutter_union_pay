@@ -4,14 +4,14 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'union_pay'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'A Flutter plugin for allowing developers to pay with native Android&iOS UnionPay SDKs.'
   s.description      = <<-DESC
   A Flutter plugin for allowing developers to pay with native Android&iOS UnionPay SDKs.
                        DESC
-  s.homepage         = 'http://example.com'
+  s.homepage         = 'https://github.com/xmy1231/flutter_union_pay'
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'Your Company' => 'email@example.com' }
+  s.author           = { 'xuj' => 'xujun_05130340@gmail.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
 
@@ -27,4 +27,6 @@ Pod::Spec.new do |s|
   # Flutter.framework does not contain a i386 slice.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
   s.swift_version = '5.0'
+
+  s.vendored_frameworks = 'Framework/UPPaymentControlMini.xcframework'
 end

@@ -7,7 +7,7 @@
 // https://forums.swift.org/t/swift-static-libraries-dont-copy-generated-objective-c-header/19816
 #import "union_pay-Swift.h"
 #endif
-#import <UPPaymentControl.h>
+#import <UPPaymentControlMini/UPPaymenControlMini.h>
 
 @implementation FlutterUnionPayPlugin
 - (instancetype)initWithViewController:(UIViewController *)viewController{
